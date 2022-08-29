@@ -1,0 +1,8 @@
+stm32 Attack Interrupt
+
+https://www.electronicshub.org/working-with-interrupts-in-stm32f103c8t6/#Interrupt_Types_and_ISR
+
+
+stm32 RPM
+
+https://miliohm.com/build-tachometer-or-rpm-counter-using-optocoupler-with-arduino/
