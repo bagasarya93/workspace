@@ -1,0 +1,15 @@
+Downloading packages
+Installing arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7
+
+dialout serial port
+====================
+koneksikan perangkat
+ls -l /dev/tty<ACM* atau USB*>
+sudo chmod 777 /dev/tty<ACM* atau USB*>
+sudo pacman -Syyu
+
+sudo groupadd dialout
+sudo gpasswd -a USER dialout
+sudo usermod -a -G dialout USER
+sudo chmod a+rw /dev/ttyACM0
+sudo usermod -a -G tty yourname
