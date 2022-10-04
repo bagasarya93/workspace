@@ -9,3 +9,8 @@ https://miliohm.com/build-tachometer-or-rpm-counter-using-optocoupler-with-ardui
 
 ESP32 Datalogger to Firebase
 https://www.electroniclinic.com/esp32-firebase-tutorial-send-sensor-data-to-google-firebase-database/
+
+Solving ESP32 Error upload
+https://forum.arduino.cc/t/solved-arduino-ide-on-linux-mint-20-no-serial-module/678187
+instal pyserial
+https://software.manjaro.org/package/python-pyserial
