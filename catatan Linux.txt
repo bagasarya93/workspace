@@ -13,3 +13,14 @@ sudo gpasswd -a USER dialout
 sudo usermod -a -G dialout USER
 sudo chmod a+rw /dev/ttyACM0
 sudo usermod -a -G tty yourname
+
+youtube
+=======
+Programming STM32F411CEU6 NTC Temperature Sensor Using Arduino IDE
+
+Support me: https://trakteer.id/diystron
+Find here the detailed tutorial :
+https://diystron.blogspot.com/2022/09/programming-stm32f411ceu6-ntc.html
+More Tutorial Videos:https://youtube.com/playlist?list=PLtSAB_F0B0qvVyiQr9fM6VT9I7osSTJh0
+
+#programming #stm32  #blackpill #ntc Programming, Embedded, STM32F103C6T6A, STM32F411CEU6, Arduino, ST-LINK, STM32, Blue Pill, Black Pill, ARM, Ubuntu
