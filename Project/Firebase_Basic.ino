@@ -50,6 +50,13 @@ unsigned long sendDataPrevMillis = 0;
 
 unsigned long count = 0;
 
+//Define FirebaseESP32 data object
+FirebaseData firebaseData;
+FirebaseJson json;
+int Vresistor = A0; 
+int Vrdata = 0; 
+
+
 void setup()
 {
 
@@ -143,6 +150,15 @@ void setup()
 
 void loop()
 {
+  
+  Vrdata = analogRead(Vresistor);
+  int Sdata = map(Vrdata,0,4095,0,1000);
+  Serial.println(Sdata); 
+  delay(100); 
+  json.set("/data", Sdata);
+  //Firebase.updateNode(firebaseData,"/Sensor",json);
+  Firebase.RTDB.set(&fbdo, F("/test/json"), &json)
+
 
   // Firebase.ready() should be called repeatedly to handle authentication tasks.
 
