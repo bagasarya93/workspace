@@ -14,3 +14,7 @@ Solving ESP32 Error upload
 https://forum.arduino.cc/t/solved-arduino-ide-on-linux-mint-20-no-serial-module/678187
 instal pyserial
 https://software.manjaro.org/package/python-pyserial
+
+
+SD CARD
+https://github.com/stm32duino/Arduino_Core_STM32/issues/730
