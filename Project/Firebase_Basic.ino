@@ -157,7 +157,7 @@ void loop()
   delay(100); 
   json.set("/data", Sdata);
   //Firebase.updateNode(firebaseData,"/Sensor",json);
-  Firebase.RTDB.set(&fbdo, F("/test/json"), &json)
+  Firebase.RTDB.set(&fbdo, F("/test/json"), &json);
 
 
   // Firebase.ready() should be called repeatedly to handle authentication tasks.
