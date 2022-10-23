@@ -34,11 +34,11 @@
 #define API_KEY "API_KEY"
 
 /* 3. Define the RTDB URL */
-#define DATABASE_URL "https://esp32-firebase-6df8c-default-rtdb.firebaseio.com/" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
+#define DATABASE_URL "https://iot-project-63377-default-rtdb.firebaseio.com" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
-//#define USER_EMAIL "USER_EMAIL"
-//#define USER_PASSWORD "USER_PASSWORD"
+#define USER_EMAIL "USER_EMAIL"
+#define USER_PASSWORD "USER_PASSWORD"
 
 // Define Firebase Data object
 FirebaseData fbdo;
@@ -55,7 +55,6 @@ FirebaseData firebaseData;
 FirebaseJson json;
 int Vresistor = A0; 
 int Vrdata = 0; 
-
 
 void setup()
 {
@@ -91,7 +90,7 @@ void setup()
 
   // Or use legacy authenticate method
   config.database_url = DATABASE_URL;
-  config.signer.tokens.legacy_token = "5tdw4TJEjsAkpTaraL852fcozAAMPSgxcgy6A6WZ";
+  config.signer.tokens.legacy_token = "L7kPHvz7ADZentiLWLi0629cLDI8BHnyFZm5qpIl";
 
   // To connect without auth in Test Mode, see Authentications/TestMode/TestMode.ino
 
@@ -150,19 +149,30 @@ void setup()
 
 void loop()
 {
-  
+
   Vrdata = analogRead(Vresistor);
   int Sdata = map(Vrdata,0,4095,0,1000);
   Serial.println(Sdata); 
   delay(100); 
-  json.set("/data", Sdata);
+  //json.set("/data", Sdata);
   //Firebase.updateNode(firebaseData,"/Sensor",json);
-  Firebase.RTDB.set(&fbdo, F("/test/json"), &json);
+  Firebase.RTDB.set(&fbdo, F("/Potensiometer"), Sdata);
+  
+  int DatPot = Firebase.RTDB.getInt(&fbdo, F("/Potensiometer"));
+  Serial.print("Baca data DB Potensiometer >>");
+  Serial.println(DatPot);
+  
+  int DatButt = Firebase.RTDB.getInt(&fbdo, F("/Button1"));
+  Serial.print("Baca data DB Button1 >>");
+  Serial.println(DatButt);
+  
+}  
 
+  
 
   // Firebase.ready() should be called repeatedly to handle authentication tasks.
 
-  if (Firebase.ready() && (millis() - sendDataPrevMillis > 15000 || sendDataPrevMillis == 0))
+  /*if (Firebase.ready() && (millis() - sendDataPrevMillis > 15000 || sendDataPrevMillis == 0))
   {
     sendDataPrevMillis = millis();
 
@@ -227,7 +237,7 @@ void loop()
 
     count++;
   }
-}
+}*/
 
 /** NOTE:
  * When you trying to get boolean, integer and floating point number using getXXX from string, json
