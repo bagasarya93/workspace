@@ -55,12 +55,17 @@ FirebaseData firebaseData;
 FirebaseJson json;
 int Vresistor = A0; 
 int Vrdata = 0; 
+int tempPin = A3;
+int ledpin = 12;
+
 
 void setup()
 {
 
   Serial.begin(115200);
 
+  pinMode (ledpin, OUTPUT);
+  
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("Connecting to Wi-Fi");
   while (WiFi.status() != WL_CONNECTED)
@@ -149,23 +154,45 @@ void setup()
 
 void loop()
 {
-
+  //Potensiometer
   Vrdata = analogRead(Vresistor);
   int Sdata = map(Vrdata,0,4095,0,1000);
-  Serial.println(Sdata); 
-  delay(100); 
+  //Serial.println(Sdata); 
+  //delay(100); 
   //json.set("/data", Sdata);
   //Firebase.updateNode(firebaseData,"/Sensor",json);
   Firebase.RTDB.set(&fbdo, F("/Potensiometer"), Sdata);
+  delay(100);
   
-  int DatPot = Firebase.RTDB.getInt(&fbdo, F("/Potensiometer"));
-  Serial.print("Baca data DB Potensiometer >>");
-  Serial.println(DatPot);
-  
-  int DatButt = Firebase.RTDB.getInt(&fbdo, F("/Button1"));
-  Serial.print("Baca data DB Button1 >>");
-  Serial.println(DatButt);
-  
+
+  //LM35
+  int val = analogRead(tempPin);
+  float mv = ( val/4096.0)*3300.0;
+  int cel = mv/10;
+  //float farh = (cel*9)/5 + 32;
+  Firebase.RTDB.set(&fbdo, F("/Temperature"), cel);
+  delay(100);
+
+  //Ambil data button1 dari DataBase
+  int DatBut1 = 0;  
+  Serial.printf("Data Button1... %s\n", Firebase.RTDB.getInt(&fbdo, F("/Button1"), &DatBut1) ? String(DatBut1).c_str() : fbdo.errorReason().c_str());
+  //Ambil data Potensiometer dari DataBase
+  int DatPot = 0;
+  Serial.printf("Data Potensiometer... %s\n", Firebase.RTDB.getInt(&fbdo, F("/Potensiometer"), &DatPot) ? String(DatPot).c_str() : fbdo.errorReason().c_str()); 
+  //Ambil data Temperature
+  int DatTemp = 0;
+  Serial.printf("Data Temperature... %s\n", Firebase.RTDB.getInt(&fbdo, F("/Temperature"), &DatTemp) ? String(DatTemp).c_str() : fbdo.errorReason().c_str());
+  delay(100);
+
+  //relay
+  if (DatBut1 == 1){
+    digitalWrite (ledpin, HIGH);
+    Serial.println("Lampu Nyala");
+  }
+  else {
+    digitalWrite (ledpin, LOW);
+    Serial.println("Lampu Mati");    
+  }
 }  
 
   
