@@ -22,3 +22,9 @@ https://github.com/stm32duino/Arduino_Core_STM32/issues/730
 
 SPI protocol
 https://www.e-tinkers.com/2020/03/do-you-know-arduino-spi-and-arduino-spi-library/
+
+Arduino NTC
+https://www.circuitbasics.com/arduino-thermistor-temperature-sensor-tutorial/
+
+STM32 Example Project
+https://how2electronics.com/microcontrollers/stm32-projects/
