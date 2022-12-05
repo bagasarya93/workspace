@@ -3,8 +3,7 @@
 link Referensi
 
 Install Package AUR
-https://dev.to/nabbisen/installing-aur-packages-bdf
-https://wiki.manjaro.org/index.php/Arch_User_Repository
+https://dev.to/nabbisen/installing-aur-packages-bdf || https://wiki.manjaro.org/index.php/Arch_User_Repository
 
 stm32 Attack Interrupt
 https://www.electronicshub.org/working-with-interrupts-in-stm32f103c8t6/#Interrupt_Types_and_ISR
