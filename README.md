@@ -31,3 +31,6 @@ https://www.circuitbasics.com/arduino-thermistor-temperature-sensor-tutorial/
 
 STM32 Example Project
 https://how2electronics.com/microcontrollers/stm32-projects/
+
+WEB Server Gauge
+https://randomnerdtutorials.com/esp8266-web-server-gauges/
