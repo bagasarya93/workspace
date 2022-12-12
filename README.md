@@ -33,7 +33,7 @@ STM32 Example Project
 https://how2electronics.com/microcontrollers/stm32-projects/
 
 WEB Server
-https://www.electronics-lab.com/project/esp32-webserver-tutorial/ ; https://microcontrollerslab.com/lm35-temperature-sensor-with-esp32-web-server/
+https://www.electronics-lab.com/project/esp32-webserver-tutorial/ ; https://microcontrollerslab.com/lm35-temperature-sensor-with-esp32-web-server/ ; https://techtutorialsx.com/2018/09/17/esp32-arduino-web-server-serving-external-css-file/
 
 WEB Server Gauge
 https://randomnerdtutorials.com/esp8266-web-server-gauges/
