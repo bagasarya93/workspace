@@ -43,3 +43,6 @@ https://docs.platformio.org/en/latest/core/installation/udev-rules.html
 
 STM32 SPIFS File
 https://randomnerdtutorials.com/esp32-vs-code-platformio-spiffs/
+
+ESP32 SDcard
+https://www.robotikindonesia.com/2020/03/sd-card-menggunakan-esp32-arduino.html
