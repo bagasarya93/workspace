@@ -37,3 +37,6 @@ https://www.electronics-lab.com/project/esp32-webserver-tutorial/ ; https://micr
 
 WEB Server Gauge
 https://randomnerdtutorials.com/esp8266-web-server-gauges/
+
+PlatformIO Core Install
+https://docs.platformio.org/en/latest/core/installation/udev-rules.html
