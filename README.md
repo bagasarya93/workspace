@@ -40,3 +40,6 @@ https://randomnerdtutorials.com/esp8266-web-server-gauges/
 
 PlatformIO Core Install
 https://docs.platformio.org/en/latest/core/installation/udev-rules.html
+
+STM32 SPIFS File
+https://randomnerdtutorials.com/esp32-vs-code-platformio-spiffs/
