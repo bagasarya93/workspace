@@ -46,3 +46,6 @@ https://randomnerdtutorials.com/esp32-vs-code-platformio-spiffs/
 
 ESP32 SDcard
 https://www.robotikindonesia.com/2020/03/sd-card-menggunakan-esp32-arduino.html
+
+ESP32 Async Web Server – Control Outputs
+https://randomnerdtutorials.com/esp32-async-web-server-espasyncwebserver-library/
