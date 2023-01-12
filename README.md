@@ -49,3 +49,7 @@ https://www.robotikindonesia.com/2020/03/sd-card-menggunakan-esp32-arduino.html
 
 ESP32 Async Web Server – Control Outputs
 https://randomnerdtutorials.com/esp32-async-web-server-espasyncwebserver-library/
+
+PHP on Linux
+https://letsot.com/cara-install-php-di-arch-linux-dan-manjaro/
+https://computingforgeeks.com/how-to-install-php-on-arch-linux-and-manjaro/
