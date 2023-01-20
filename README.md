@@ -55,4 +55,13 @@ https://letsot.com/cara-install-php-di-arch-linux-dan-manjaro/
 https://computingforgeeks.com/how-to-install-php-on-arch-linux-and-manjaro/
 
 STM32-LibraryFootprint
-https://github.com/yet-another-average-joe/Kicad-STM32
+https://github.com/yet-another-average-joe/Kicad-STM32\
+
+Arduino Serial:
+https://www.arduino.cc/reference/en/language/functions/communication/serial/
+
+Arduino EEPROM:
+https://docs.arduino.cc/learn/built-in-libraries/eeprom
+
+Convert String to Int
+https://arduinogetstarted.com/faq/how-to-convert-string-variable-to-integer-in-arduino
