@@ -65,3 +65,6 @@ https://docs.arduino.cc/learn/built-in-libraries/eeprom
 
 Convert String to Int
 https://arduinogetstarted.com/faq/how-to-convert-string-variable-to-integer-in-arduino
+
+Open PLC Traffic Light
+https://github.com/Yekki1/Ladder-Logic
