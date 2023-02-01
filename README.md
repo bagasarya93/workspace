@@ -68,3 +68,6 @@ https://arduinogetstarted.com/faq/how-to-convert-string-variable-to-integer-in-a
 
 Open PLC Traffic Light
 https://github.com/Yekki1/Ladder-Logic
+
+Java Language
+https://www.javatpoint.com/how-many-days-required-to-learn-java
