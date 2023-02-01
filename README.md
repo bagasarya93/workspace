@@ -70,4 +70,4 @@ Open PLC Traffic Light
 https://github.com/Yekki1/Ladder-Logic
 
 Java Language
-https://www.javatpoint.com/how-many-days-required-to-learn-java
+https://www.javatpoint.com/how-many-days-required-to-learn-java || https://java.tutorials24x7.com/blog/how-to-install-visual-studio-code-for-java-on-ubuntu
