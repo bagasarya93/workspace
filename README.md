@@ -73,3 +73,6 @@ Java Language
 https://www.javatpoint.com/how-many-days-required-to-learn-java || https://java.tutorials24x7.com/blog/how-to-install-visual-studio-code-for-java-on-ubuntu
 
 Python Programming: https://www.tutorialspoint.com/python/index.htm || https://www.pythonguis.com/tutorials/create-gui-tkinter/ || https://coderslegacy.com/python/list-of-tkinter-widgets/
+
+Java in Linux: 
+https://credibledev.com/install-java-for-vs-code-on-manjaro-linux/#installing-java-on-manjaro
